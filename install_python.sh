@@ -13,6 +13,11 @@ fi
 #Python 3 version to install
 version="3.5.1"
 
+if [ "`python3 --version`" == "Python $version" ]
+then
+  echo "Python $version is already installed. Skipping this part."
+fi
+
 #------------------------------------------------------
 apt-get install -y build-essential libncursesw5-dev
 apt-get install -y libgdbm-dev libc6-dev
