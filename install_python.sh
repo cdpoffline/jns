@@ -16,6 +16,7 @@ version="3.5.1"
 if [ "`python3 --version`" == "Python $version" ]
 then
   echo "Python $version is already installed. Skipping this part."
+  exit 0
 fi
 
 #------------------------------------------------------
