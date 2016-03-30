@@ -12,12 +12,13 @@ fi
 # generate config and create notebook directory
 jupyter notebook --generate-config
 cd $home
-mkdir notebooks
+mkdir -p notebooks
 
 target=~/.jupyter/jupyter_notebook_config.py
 
 # get current ip address - we assume it is static
-ip=$(echo $(hostname -I))
+#ip=$(echo $(hostname -I))
+ip='0.0.0.0'
 
 # set up dictionary of changes for jupyter_config.py
 declare -A arr
