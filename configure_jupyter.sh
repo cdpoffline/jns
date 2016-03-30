@@ -1,3 +1,4 @@
+#!/bin/bash
 # script name:     configure_jupyter.sh
 # last modified:   2015/09/30
 # sudo:            no
